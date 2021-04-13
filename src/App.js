@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="todo-list">
-      {todosData.map(todo => <TodoItem key="todo.id" todo={todo} />)}
+      {todosData.map(item => <TodoItem key={item.id} item={item} />)}
     </div>
   );
 }
