@@ -1,10 +1,10 @@
 import TodoItem from './components/TodoItem';
 import todosData from './mock_data/todosData';
+import './App.css';
 
 function App() {
   return (
-    <div>
-      <h1>Todo App</h1>
+    <div className="todo-list">
       {todosData.map(todo => <TodoItem key="todo.id" todo={todo} />)}
     </div>
   );
